@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General link styles */
+a:link,
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #ff6b6b;
+}
+
+/* Body styles */
+body {
+  font-family: "proximanova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HERO SECTION */
+header.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #f0f0f0;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+/* Featured Products */
+.featured-products h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.price {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* SLIDER STYLES */
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+
+  .slider {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding: 30px 0;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    margin: 20px 0;
+  }
+}
