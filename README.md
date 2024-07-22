@@ -1,4 +1,4 @@
-RX
+RPH
 
 Overview
 This project is a responsive web application featuring a home page with a working slider, a product page with dynamic content and filtering capabilities, and a contact page with JavaScript form validation.
