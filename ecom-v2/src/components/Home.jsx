@@ -40,7 +40,7 @@ function Home() {
       <section className="about">
         <div className="container">
           <h2>About Us</h2>
-          <p>Welcome to RX, where style meets comfort! At RX, we believe that looking good should never mean sacrificing comfort. Our mission is to provide you with high-quality, stylish apparel that feels as good as it looks. From everyday essentials to standout pieces, we curate a collection that caters to your unique taste and lifestyle. Join us on a journey to discover fashion that empowers you to express yourself effortlessly. Experience the perfect blend of style and comfort with RX!</p>
+          <p>Welcome to RPH, where style meets comfort! At RPH, we believe that looking good should never mean sacrificing comfort. Our mission is to provide you with high-quality, stylish apparel that feels as good as it looks. From everyday essentials to standout pieces, we curate a collection that caters to your unique taste and lifestyle. Join us on a journey to discover fashion that empowers you to express yourself effortlessly. Experience the perfect blend of style and comfort with RPH!</p>
         </div>
       </section>
       <section className="featured-products">

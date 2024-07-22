@@ -16,7 +16,7 @@ function Footer() {
       <p>© 2024 RX. All rights reserved | CA 92602, California, USA | Phone: 1-800-123-4444 | Email:contact@RX.com</p>
       <div className="footer-app">
         <a href="https://www.apple.com/app-store/" className="app-store-link">
-          <img src="/ecom-img/App Store.png" alt="Download on the App Store" />
+          <img src="/ecom-img/AppStore.png" alt="Download on the App Store" />
         </a>
         <a href="https://play.google.com/store/games?hl=en_US&gl=US" className="google-play-link">
           <img src="/ecom-img/GoogPlay.png" alt="Get it on Google Play" />
