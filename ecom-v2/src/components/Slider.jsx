@@ -6,15 +6,11 @@ const Slider = ({ slides }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000); // Time interval (1000ms = 1 second)
 
     return () => clearInterval(interval);
-  }, []);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
+  }, [slides.length]);
 
   return (
     <div className="slider">
