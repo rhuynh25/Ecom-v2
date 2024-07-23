@@ -7,7 +7,7 @@ const cors = require('cors');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 const connection = mysql.createConnection({
   host: process.env.DB_HOST || 'sql5.freesqldatabase.com',
