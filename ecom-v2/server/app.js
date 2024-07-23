@@ -30,8 +30,12 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(express.static(path.join(__dirname)));
+
+console.log(path.join(__dirname));
 app.use('/ecom-img', express.static(path.join(__dirname, 'src', 'ecom-img')));
+
 
 app.get('/api/products', (req, res) => {
   const query = 'SELECT * FROM ecomDB';
@@ -44,6 +48,10 @@ app.get('/api/products', (req, res) => {
     console.log('Received products:', results);
     res.json(results);
   });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join( __dirname, 'build', 'index.html'));
 });
 
 app.listen(PORT, () => {
