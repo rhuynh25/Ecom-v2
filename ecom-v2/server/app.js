@@ -3,8 +3,7 @@ const dotenv = require('dotenv');
 const mysql = require('mysql2');
 const path = require('path');
 const cors = require('cors');
-
-dotenv.config();
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -26,12 +25,14 @@ connection.connect((err) => {
 });
 
 app.use(cors({
-  origin: 'http://localhost:3000', 
-  credentials: true
+  origin: '*'
 }));
 
 
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 console.log(path.join(__dirname));
 app.use('/ecom-img', express.static(path.join(__dirname, 'src', 'ecom-img')));
