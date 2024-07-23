@@ -20,7 +20,7 @@ function Header() {
             <li><Link to="/" onClick={handleMenuToggle}>Home</Link></li>
             <li><Link to="/products" onClick={handleMenuToggle}>Products</Link></li>
             <li><Link to="/contact" onClick={handleMenuToggle}>Contact</Link></li>
-            <li><Link to="/cart" onClick={handleMenuToggle}>Cart</Link></li>
+            {/* <li><Link to="/cart" onClick={handleMenuToggle}>Cart</Link></li> */}
           </ul>
         </div>
       </nav>
