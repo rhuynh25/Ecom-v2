@@ -28,9 +28,9 @@ app.use(cors());
 
 
 app.use(express.static(path.join(__dirname, 'build')));
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// });
 
 console.log(path.join(__dirname));
 app.use('/ecom-img', express.static(path.join(__dirname, 'src', 'ecom-img')));
