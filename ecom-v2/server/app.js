@@ -9,11 +9,11 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 const connection = mysql.createConnection({
-  host: process.env.DB_HOST || 'sql5.freesqldatabase.com',
-  user: process.env.DB_USER || 'sql5720256',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
   port: 3306,
-  password: process.env.DB_PASSWORD || 'dNSb2MJ3KD',
-  database: process.env.DB_DATABASE || 'sql5720256'
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE
 });
 
 connection.connect((err) => {
