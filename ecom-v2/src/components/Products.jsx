@@ -12,7 +12,7 @@ function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/products');
+        const response = await axios.get('https://ecom-v2-x6vl.onrender.com/api/products');
         console.log('Received data:', response.data);
         setProducts(response.data);
         setFilteredProducts(response.data); // Initially set both products and filteredProducts
